@@ -127,7 +127,7 @@ cell_spec_html <- function(x, bold, italic, monospace, underline, strikeout,
   }
 
   if (!is.null(link)) {
-    x <- paste0('<a href="', link, '" style="', cell_style, '" ',
+    x <- paste0('<a href="', link, '" target=_blank"', '" style="', cell_style, '" ',
                 tooltip_n_popover, '>', x, '</a>')
   } else {
     x <- paste0('<span style="', cell_style, '" ',
